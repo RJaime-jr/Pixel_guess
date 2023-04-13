@@ -1,14 +1,60 @@
+html {
+    font-family: Nunito, sans-serif;
+    background-color: #447bad;
+}
+
 body {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
 
+
 #image1 {
     width: 800px;
     height: auto;
+}
+
+.button {
+    transition: transform 0.1s ease-out, box-shadow;
+    font-size: 25px;
+    min-height: 50px;
+    min-width: 100px;
+    box-sizing: border-box;
+
+
+    background-color: #d4d10a;
+    box-shadow: 0 5px 0 #807d07;
+    border-radius: 5px;
+    color: rgb(17, 1, 1);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+#button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    font-size: 35px;
+}
+
+input {
+    min-height: 40px;
+    width: 350px;
+    font-size: 35px;
+    border-radius: 6%;
+    text-align: center;
+
 }
