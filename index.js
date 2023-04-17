@@ -23,8 +23,9 @@ function loadImage() {
 
     c.width = w;
     c.height = h;
-    ctx = c.getContext("2d");
+    ctx = c.getContext("2d", { willReadFrequently: true });
     ctx.drawImage(img1, 0, 0);
+
 
 
 
@@ -42,7 +43,6 @@ function loadImage() {
     img2.width = 600;
     img2.id = ("img2")
     imgBox.appendChild(img2);
-    //level.textContent = "Hint: " + arrNum;
     helpBut.textContent = "Hint: " + arrNum;
 }
 
@@ -69,6 +69,15 @@ helpBut.onclick = function () {
 
 enter.onclick = function () {
     // console.log(false);
+
+    img1.src = "maokai.jpg";
+
+
+
+
+
+    console.log("enter")
+    /*
     if (answer == false) {
         reloadImage();
         console.log(answer);
@@ -80,4 +89,5 @@ enter.onclick = function () {
         console.log(answer);
 
     }
+    */
 }
